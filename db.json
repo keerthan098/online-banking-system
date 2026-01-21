@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "f8a6",
+      "name": "keerthan",
+      "balance": 99999999
+    },
+    {
+      "id": "b5a5",
+      "name": "keerthan",
+      "balance": 999999
+    },
+    {
+      "id": "4427",
+      "name": "shiva",
+      "balance": 5000
+    }
+  ]
+}
