@@ -1,42 +1,40 @@
-# Online Bank Management System (Java + REST API)
+# Online Banking System
 
-A Java-based console application that simulates basic banking operations using REST APIs.
-The project uses json-server as a mock backend and follows real-world backend design principles.
-
----
+A backend banking system built using Spring Boot and PostgreSQL.
 
 ## Features
-- Add new users (duplicate users prevented)
-- View balance using unique user ID
-- Deposit money
-- Withdraw money with validation
-- REST API integration using HTTP (GET, POST, PATCH)
-
----
+- User registration & login
+- Deposit & withdraw
+- Balance check
+- PostgreSQL database
+- REST APIs
+- Layered architecture (Controller, Service, Repository)
 
 ## Tech Stack
-- Java (Core Java)
-- REST API
-- json-server
-- VS Code
+Java  
+Spring Boot  
+PostgreSQL  
+JPA/Hibernate  
+Maven  
 
----
+## Run Locally
+1. Create database: bankdb
+2. Update application.properties with DB credentials
+3. Run:
+   mvn spring-boot:run
 
-## Project Structure
-- online-bank-management/
-  ├── Main.java
-  ├── ApiClient.java
-  ├── db.json
+## API Endpoints
+Register:
+GET /users/register?name=&password=&balance=
 
+Login:
+GET /users/login?name=&password=
 
----
+Deposit:
+GET /users/{id}/deposit?amount=
 
-## ▶ How to Run
+Withdraw:
+GET /users/{id}/withdraw?amount=
 
-### 1. Start Backend Server
-```bash
-json-server --watch db.json --port 3000
-
-### 2.Compile & Run Java App
-javac *.java
-java Main
+Get User:
+GET /users/{id}
