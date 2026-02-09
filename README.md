@@ -15,7 +15,7 @@ Java
 Spring Boot  
 PostgreSQL  
 JPA/Hibernate  
-Maven  
+
 
 ## Run Locally
 1. Create database: bankdb
